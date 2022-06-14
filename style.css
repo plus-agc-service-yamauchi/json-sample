@@ -1,0 +1,53 @@
+/* || general styles */
+
+html {
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+/* header styles */
+
+h1 {
+    text-align: center;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* section styles */
+
+section {
+    display:flex;
+}
+
+article{
+    flex-basis:33%;
+}
+section p {
+    margin: 5px 0;
+}
+
+section ul {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+}
+
+.imageWrapper{
+ flex:1;
+}
+
+.imageWrapper img{
+    width:100%;
+}

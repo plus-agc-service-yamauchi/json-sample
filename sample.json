@@ -1,0 +1,46 @@
+{
+  "title": "データ取得サンプル",
+  "cities": "市町村名",
+  "address": "番地",
+  "active": true,
+  "facilities": [
+    {
+      "image": "./img/image.jpg",
+      "alt": "altテキスト",
+      "tag": "タグ名",
+      "category": "カテゴリ名",
+      "overview": [
+        "概要1",
+        "概要2",
+        "概要3"
+      ],
+      "url" : "./facilities_01.html"
+    },
+    {
+      "image": "./img/image.jpg",
+      "alt": "altテキスト",
+      "tag": "タグ名",
+      "category": "カテゴリ名",
+      "overview": [
+        "概要1",
+        "概要2",
+        "概要3"
+      ],
+      "url" : "./facilities_02.html"
+    },
+    {
+      "image": "./img/image.jpg",
+      "alt": "altテキスト",
+      "tag": "タグ名",
+      "category": "カテゴリ名",
+      "overview": [
+        "概要1",
+        "概要2",
+        "概要3",
+        "概要4",
+        "概要5"
+      ],
+      "url" : "facilities_03.html"
+    }
+  ]
+}

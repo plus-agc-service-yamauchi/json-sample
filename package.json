@@ -1,0 +1,21 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "http-server",
+    "json": "node ./excel-sheet-to-json.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ansi-colors": "^4.1.3",
+    "fs": "*",
+    "glob": "^8.0.3",
+    "http-server": "^14.1.1",
+    "xlsx": "^0.18.5"
+  }
+}
