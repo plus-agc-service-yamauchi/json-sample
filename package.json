@@ -2,11 +2,11 @@
   "name": "sample",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "http-server",
-    "json": "node ./excel-sheet-to-json.js"
+    "server": "reload -b node js/excel-sheet-to-json.js",
+    "json": "node js/excel-sheet-to-json.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "fs": "*",
     "glob": "^8.0.3",
     "http-server": "^14.1.1",
+    "reload": "^3.2.0",
     "xlsx": "^0.18.5"
   }
 }
