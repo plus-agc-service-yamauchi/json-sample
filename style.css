@@ -1,4 +1,6 @@
-/* || general styles */
+/* ======================================================================================================================
+コメント
+====================================================================================================================== */
 
 html {
     font-family: "Helvetica Neue",
@@ -9,7 +11,13 @@ html {
     sans-serif;
 }
 
-/* header styles */
+form{
+    text-align:center;
+}
+
+/* ======================================================================================================================
+コメント
+====================================================================================================================== */
 
 h1 {
     text-align: center;
@@ -21,15 +29,21 @@ header p {
     text-align: center;
 }
 
-/* section styles */
+/* ======================================================================================================================
+コメント
+====================================================================================================================== */
 
 section {
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
 }
 
-article{
-    flex-basis:33%;
+article {
+    flex-basis: 33%;
 }
+
 section p {
     margin: 5px 0;
 }
@@ -44,10 +58,59 @@ h2 {
     margin-bottom: 10px;
 }
 
-.imageWrapper{
- flex:1;
+.imageWrapper {
+    flex: 1;
 }
 
-.imageWrapper img{
-    width:100%;
+.imageWrapper img {
+    width: 100%;
+}
+
+/* ======================================================================================================================
+コメント
+====================================================================================================================== */
+
+.sort {
+    padding: 0;
+    width: 94%;
+    margin: 3% auto 20px;
+    letter-spacing: -.4em;
+    font-size: 0;
+    text-align: center;
+}
+
+.sort li {
+    display: inline-block;
+    font-size: 14px;
+    padding: 2px 12px;
+    margin: 0 2% 12px 0 !important;
+    border: 1px solid #cccccc;
+    color: #000000;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.sort li:last-child {
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+.sort li:hover {
+    opacity: .6;
+}
+
+.list {
+    position: relative;
+}
+
+.list__notxt {
+    display: block;
+    padding: 0 0 20px;
+    display: none;
+}
+
+
+.search-result{
+    flex-basis:100%;
 }

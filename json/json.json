@@ -1,9 +1,0 @@
-[
-  {
-    "image": "./img/image.jpg",
-    "alt": "altテキスト",
-    "tag": "タグ名",
-    "category": "カテゴリ名",
-    "overview": "概要1,概要2"
-  }
-]

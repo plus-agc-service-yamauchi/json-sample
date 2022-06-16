@@ -11,16 +11,25 @@
 <header>
 </header>
 
-<div>
-    <button onclick="sortDate()">日付</button>
-</div>
+<form>
+    <label for="keyword"></label><input type="text" id="keyword" placeholder="検索ワードを入力">
+</form>
 
-<section>
+<ul class="sort">
+    <li class="onsen">温泉がある宿</li>
+    <li class="ryokan">旅館・ホテル</li>
+    <li class="minshuku">民宿</li>
+    <li class="pension">ペンション</li>
+    <li class="cottage">コテージ</li>
+    <li class="reset">リセット</li>
+</ul>
+
+<section id="listWrapper">
 </section>
 
-<script src="js/index.js">
-</script>
-<script src="js/sort.js">
-</script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="js/jquery.quicksearch.min.js"></script>
+<script src="js/index.js"></script>
+
 </body>
 </html>
