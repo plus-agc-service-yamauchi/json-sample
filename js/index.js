@@ -38,6 +38,7 @@ function showHeroes(obj) {
         const myPara1 = document.createElement('p');
         const myPara2 = document.createElement('p');
         const myPara3 = document.createElement('p');
+        const myPara4 = document.createElement('p');
         const myList = document.createElement('ul');
         const buttonWrapper = document.createElement('div');
         buttonWrapper.className = 'linkButton';
@@ -46,6 +47,7 @@ function showHeroes(obj) {
         myPara0.textContent = '施設名:' + facility[i].name;
         myPara1.textContent = 'カテゴリ:' + facility[i].category;
         myPara2.textContent = 'タグ:' + facility[i].tag;
+        myPara4.textContent = '価格帯:' + facility[i].price;
         myPara3.textContent = '概要:';
         buttonWrapper.innerHTML = '<a href="' + facility[i].url + '">' + '詳しく見る' + '</a>'
 
@@ -60,6 +62,7 @@ function showHeroes(obj) {
         myArticle.appendChild(myPara0);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara4);
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myList);
         myArticle.appendChild(buttonWrapper);
@@ -68,96 +71,4 @@ function showHeroes(obj) {
     }
 }
 
-/* ======================================================================================================================
-ボタンでソート
-====================================================================================================================== */
 
-// 温泉がある宿
-$(".onsen").on("click", function () {
-    // リストの数だけ処理を繰り返す
-    $("article").each(function () {
-        // 温泉がある宿を抽出
-        if ($(this).is(":contains('温泉がある宿')")) {
-            $(this).show();
-        } else {
-            $(this).hide();
-        }
-    });
-    list();
-});
-
-// 旅館・ホテル
-$(".ryokan").on("click", function () {
-    // リストの数だけ処理を繰り返す
-    $("article").each(function () {
-        // 旅館・ホテルを抽出
-        if ($(this).is(":contains('旅館・ホテル')")) {
-            $(this).show();
-        } else {
-            $(this).hide();
-        }
-    });
-    list();
-});
-
-// 民宿
-$(".minshuku").on("click", function () {
-    // リストの数だけ処理を繰り返す
-    $("article").each(function () {
-        // 旅館・ホテルを抽出
-        if ($(this).is(":contains('民宿')")) {
-            $(this).show();
-        } else {
-            $(this).hide();
-        }
-    });
-    list();
-});
-
-// ペンション
-$(".pension").on("click", function () {
-    // リストの数だけ処理を繰り返す
-    $("article").each(function () {
-        // 旅館・ホテルを抽出
-        if ($(this).is(":contains('ペンション')")) {
-            $(this).show();
-        } else {
-            $(this).hide();
-        }
-    });
-    list();
-});
-
-// コテージ
-$(".cottage").on("click", function () {
-    // リストの数だけ処理を繰り返す
-    $("article").each(function () {
-        // 旅館・ホテルを抽出
-        if ($(this).is(":contains('コテージ')")) {
-            $(this).show();
-        } else {
-            $(this).hide();
-        }
-    });
-    list();
-});
-
-// リストをリセットする
-$(".reset").on("click", function () {
-    $("article").show();
-});
-
-function list() {
-    if ($('article').height() === 0) {
-        $(".list__notxt").show();
-        $("article ul").hide();
-    } else {
-        $(".list__notxt").hide();
-        $("article ul").show();
-    }
-}
-
-/* ======================================================================================================================
-キーワード検索
-====================================================================================================================== */
-$('#keyword').quicksearch('#listWrapper article');
